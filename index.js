@@ -15,8 +15,8 @@ app.get('/', function (req, res) {
 });
 
 let port = process.env.PORT || 3010;
-let smtp_login = "oxakostroma@gmail.com";
-let smtp_password = "Deadsea81696";
+let smtp_login = process.env.smtp_login;
+let smtp_password = process.env.smtp_password;
 
 
 
