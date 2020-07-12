@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/', function (req, res) {
+app.get('https://smtp-nodejs-portfolio.herokuapp.com/', function (req, res) {
     res.send('Hello World!');
 });
 
