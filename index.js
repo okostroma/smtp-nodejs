@@ -14,16 +14,21 @@ app.get('/', function (req, res) {
     res.send('Hello World!');
 });
 
+let port = process.env.PORT || 3010;
+let smtp_login = "oxakostroma@gmail.com";
+let smtp_password = "Deadsea81696";
 
-app.listen(3000, function () {
+
+
+app.listen(port, function () {
     console.log('Example app listening on port 3000!');
 });
 
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: "oxakostroma@gmail.com", // generated ethereal user
-        pass: "Deadsea81696", // generated ethereal password
+        user: smtp_login, // generated ethereal user
+        pass: smtp_password, // generated ethereal password
     },
 });
 
